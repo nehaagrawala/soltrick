@@ -1,0 +1,26 @@
+.logoImage{
+    width:70px;
+}
+.navbar {
+background:	#2b2b2b;
+}
+
+
+.nav > li > a {
+    font-weight: bold;
+    color:#d3d3d3;
+
+}
+.navbuttons li > a:not([class="navbuttons active-link"]):hover {
+  background: linear-gradient(to bottom, #838b83, #838b83 90%, #838b83 90%, #838b83);
+  cursor: pointer;
+  text-wrap: none; }
+  
+  .footer{
+     text-align: center;
+     color: #d3d3d3;;
+     font-size: 14pt;
+     margin-top: 150px;
+    
+  }
+ 

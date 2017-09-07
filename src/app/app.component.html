@@ -1,0 +1,46 @@
+<nav class="navbar navbar-default">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false" aria-controls="navbar">
+    <span class="sr-only"></span> 
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    </button>
+  <a class="navbar-brand">
+   <img src="../assets/4.gif" class="logoImage">
+   <img src="../assets/logosol.gif" class="logoImage1">
+  </a>
+  </div>
+  <div class=" navbar-collapse collapse" id="myNavbar">
+  <ul class="nav navbar-nav ">
+    <li>
+      <a [routerLink]="['/home']" routerLinkActive="active">Home </a>
+     </li> 
+    <li>
+      <a [routerLink]="['/articles']" routerLinkActive="active">Articles </a>
+     </li>
+    <li>
+      <a [routerLink]="['/lifestyle']" routerLinkActive="active">Lifestyles </a>
+     </li>
+    <li>
+      <a [routerLink]="['/quotes']" routerLinkActive="active">Quotes</a>
+     </li> 
+    <li>
+      <a [routerLink]="['/education']" routerLinkActive="active">Education</a>
+     </li> 
+    <li>
+      <a [routerLink]="['/aboutis']" routerLinkActive="active">AboutUs </a>
+     </li> 
+    <li>
+      <a [routerLink]="['/contactus']" routerLinkActive="active">Contact Us </a>
+     </li> 
+    
+    </ul>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
+<footer class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+  <p class="footer">Join Soltrick it will helps you to grow in each and every aspect of life.Be Healthy Be Fit and Live your life at fullest.
+  </p>
+</footer>
