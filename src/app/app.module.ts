@@ -8,11 +8,11 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutisComponent } from './aboutis/aboutis.component';
 import { ContactusComponent } from './contactus/contactus.component';
-
 import { ArticlesComponent } from './articles/articles.component';
 import { LifestylesComponent } from './lifestyles/lifestyles.component';
 import { QuotesComponent } from './quotes/quotes.component';
 import { EducationComponent } from './education/education.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,8 @@ import { EducationComponent } from './education/education.component';
     ArticlesComponent,
     LifestylesComponent,
     QuotesComponent,
-    EducationComponent
+    EducationComponent,
+    LoginComponent
 
   ],
   imports: [
