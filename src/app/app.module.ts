@@ -14,7 +14,7 @@ import { QuotesComponent } from './quotes/quotes.component';
 import { EducationComponent } from './education/education.component';
 import { LoginComponent } from './login/login.component';
 import { AuthService} from "../services";
-// import { AuthGuard } from "../guards";
+import { AuthGuard } from "../guards";
 import { FeedbackComponent } from './feedback/feedback.component';
 @NgModule({
   declarations: [
@@ -38,7 +38,7 @@ import { FeedbackComponent } from './feedback/feedback.component';
     ReactiveFormsModule,
     FormsModule
   ],
-  providers: [ AuthService],
+  providers: [ AuthService,AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

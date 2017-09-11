@@ -9,9 +9,10 @@ import { QuotesComponent } from './quotes/quotes.component';
 import { EducationComponent } from './education/education.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { LoginComponent } from './login/login.component';
-// import {AuthGuard} from "../guards";
+import {AuthGuard} from "../guards";
 const routes: Routes = [
-  {path: '', component: HomeComponent, pathMatch: 'full'},
+{path:'',redirectTo:'/home',pathMatch:'full'},
+{path: '', component: HomeComponent, pathMatch: 'full'},
 {path:'feedback',component:FeedbackComponent},
 {path: 'home', component: HomeComponent},
 {path: 'aboutis',component:AboutisComponent},

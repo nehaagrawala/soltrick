@@ -9,12 +9,12 @@ background:	#2b2b2b;
 .nav > li > a {
     font-weight: bold;
     color:#d3d3d3;
-
+    
 }
-.navbuttons li > a:not([class="navbuttons active-link"]):hover {
-  background: linear-gradient(to bottom, #838b83, #838b83 90%, #838b83 90%, #838b83);
-  cursor: pointer;
-  text-wrap: none; }
+.nav > li > a:hover{
+    color: white;
+    font-size: 20px;
+}
   
   .footer{
      text-align: center;
@@ -25,4 +25,9 @@ background:	#2b2b2b;
   }
  
 
+.username{
+color: white;
+}
+.signoutmenu {
+cursor: pointer; } 
 
