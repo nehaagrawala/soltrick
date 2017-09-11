@@ -1,3 +1,19 @@
-<p>
-  feedback works!
-</p>
+<div class=" container col-xs-12 col-sm-12  col-md-12 col-lg-12">
+<form [formGroup]="myForm" (ngSubmit)="Submit()">
+    <label class="feedback">Feedback</label>
+    <div class="group">
+        <input type="text" formControlName="username"><span class="highlight"></span><span class="bar"></span>
+        <label>Username</label>
+    </div>
+    <div class="group">
+        <input type="text" formControlName="email"><span class="highlight"></span><span class="bar"></span>
+        <label>Email Id</label>
+    </div>
+     <div class="group">
+        <input type="textarea" formControlName="comment"><span class="highlight"></span><span class="bar"></span>
+        <label>Comment</label>
+    </div>
+    <button type="submit" class="button buttonBlue" [disabled]="!myForm.valid">Submit</button>
+</form>
+
+</div>
