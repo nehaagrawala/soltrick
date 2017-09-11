@@ -13,7 +13,9 @@ import { LifestylesComponent } from './lifestyles/lifestyles.component';
 import { QuotesComponent } from './quotes/quotes.component';
 import { EducationComponent } from './education/education.component';
 import { LoginComponent } from './login/login.component';
-
+import { AuthService} from "../services";
+// import { AuthGuard } from "../guards";
+import { FeedbackComponent } from './feedback/feedback.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +27,8 @@ import { LoginComponent } from './login/login.component';
     LifestylesComponent,
     QuotesComponent,
     EducationComponent,
-    LoginComponent
+    LoginComponent,
+    FeedbackComponent
 
   ],
   imports: [
@@ -35,7 +38,7 @@ import { LoginComponent } from './login/login.component';
     ReactiveFormsModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

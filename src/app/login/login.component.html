@@ -1,3 +1,29 @@
-<p>
-  login works!
-</p>
+<div class=" container col-xs-12 col-sm-12  col-md-12 col-lg-12">
+<form [formGroup]="myForm" (ngSubmit)="signIn()">
+    <div class="logoContainer">
+        <img class="pmLogo" src="../../assets/4.gif">
+    </div>
+    <div class="group">
+        <input type="text" formControlName="username"><span class="highlight"></span><span class="bar"></span>
+        <label>Username</label>
+    </div>
+    <div class="group">
+        <input type="email" formControlName="email"><span class="highlight"></span><span class="bar"></span>
+        <label>Email Id</label>
+    </div>
+    <div class="group">
+        <select formControlName="gender">
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            
+        </select><span class="highlight"></span><span class="selectbar"></span>
+        <label>Gender</label>
+    </div>
+    <button type="submit" class="button buttonBlue" [disabled]="!myForm.valid">Login
+        <div class="ripples buttonRipples" *ngIf="myForm.valid">
+            <span class="ripplesCircle"></span>
+        </div>
+    </button>
+</form>
+
+</div>
