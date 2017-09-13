@@ -16,27 +16,33 @@ import { LoginComponent } from './login/login.component';
 import { AuthService} from "../services";
 import { AuthGuard } from "../guards";
 import { FeedbackComponent } from './feedback/feedback.component';
+
+import {StarRatingModule} from 'angular-star-rating'
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutisComponent,
     ContactusComponent,
-    
     ArticlesComponent,
     LifestylesComponent,
     QuotesComponent,
     EducationComponent,
     LoginComponent,
     FeedbackComponent
+ 
+ 
 
-  ],
+],
   imports: [
     BrowserModule,
     HttpModule,
     NgPMRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    StarRatingModule.forRoot()
+   
   ],
   providers: [ AuthService,AuthGuard],
   bootstrap: [AppComponent]

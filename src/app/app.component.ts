@@ -10,11 +10,11 @@ import { LoginComponent } from './login/login.component';
 })
 export class AppComponent {
     private currentUsername: string;
-     private currentEmailId : string;
+     
 constructor(private authService: AuthService, private router: Router) {
-    authService.newUser.subscribe((username: string,email:string) => {
+    authService.newUser.subscribe((username: string) => {
       this.currentUsername = username;
-      this.currentEmailId = email;
+      
     });
   }
 

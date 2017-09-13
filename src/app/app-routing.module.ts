@@ -10,6 +10,8 @@ import { EducationComponent } from './education/education.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { LoginComponent } from './login/login.component';
 import {AuthGuard} from "../guards";
+
+
 const routes: Routes = [
 {path:'',redirectTo:'/home',pathMatch:'full'},
 {path: '', component: HomeComponent, pathMatch: 'full'},
@@ -22,6 +24,7 @@ const routes: Routes = [
 {path:'quotes',component: QuotesComponent},
 {path:'education',component:EducationComponent},
 {path:'login',component:LoginComponent}
+
 ];
 
 @NgModule({

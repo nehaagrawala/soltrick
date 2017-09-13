@@ -1,10 +1,6 @@
 * {
   box-sizing: border-box; }
 
-body {
-  font-family: Helvetica;
-  background: #d4d4ff;
-  -webkit-font-smoothing: antialiased; }
 
 form {
   width: 380px;
@@ -35,19 +31,7 @@ input {
 input:focus {
   outline: none; }
 
-select {
-  font-size: 18px;
-  padding: 10px 10px 10px 5px;
-  display: block;
-  background: #fafafa;
-  color: #101029;
-  width: 100%;
-  border: none;
-  border-radius: 0;
-  border-bottom: 1px solid #757575; }
 
-select:focus {
-  outline: none; }
 
 /* Label */
 label {
@@ -69,12 +53,7 @@ input:focus ~ label, input.ng-valid ~ label {
   left: -2px;
   color: grey; }
 
-select:focus ~ label, select.ng-valid ~ label {
-  top: -23px;
-  -webkit-transform: scale(0.85);
-  transform: scale(0.85);
-  left: 0px;
-  color: grey; }
+
 
 /* Underline */
 .bar {
@@ -98,33 +77,16 @@ select:focus ~ label, select.ng-valid ~ label {
 .bar:after {
   right: 50%; }
 
-.selectbar {
-  position: relative;
-  display: block;
-  width: 100%; }
 
-.selectbar:before, .selectbar:after {
-  content: '';
-  height: 2px;
-  width: 0;
-  bottom: 1px;
-  position: absolute;
-  background: #101029;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease; }
 
-.selectbar:before {
-  left: 50%; }
 
-.selectbar:after {
-  right: 50%; }
+
 
 /* active */
 input:focus ~ .bar:before, input:focus ~ .bar:after {
   width: 50%; }
 
-select:focus ~ .selectbar:before, select:focus ~ .selectbar:after {
-  width: 50%; }
+
 
 /* Highlight */
 .highlight {
@@ -141,9 +103,7 @@ input:focus ~ .highlight {
   -webkit-animation: inputHighlighter 0.3s ease;
   animation: inputHighlighter 0.3s ease; }
 
-select:focus ~ .highlight {
-  -webkit-animation: inputHighlighter 0.3s ease;
-  animation: inputHighlighter 0.3s ease; }
+
 
 /* Animations */
 @-webkit-keyframes inputHighlighter {
@@ -196,6 +156,15 @@ select:focus ~ .highlight {
   background: #eee9e9;
   cursor: default; }
 
+  .feedback{
+    text-align: center;
+    color: #999;
+   font-size: 40px;
+  }
+  p.feedback:hover{
+ color:black;
+ font-size: 50px;
+  }
 
 
 

@@ -15,15 +15,13 @@ export class AuthService {
         this.isAuth = true;
         this.signedInUser = user;
          this.newUser.emit(user.username);
-        // this.newUser.emit(user.email);
+       
     }
 
     currentUsername(): string {
         return this.signedInUser.username;
     }
-     currentEmailId(): string{
-          return this.signedInUser.email;
-     }
+    
 
     isAuthenticated() {
         return this.isAuth;
