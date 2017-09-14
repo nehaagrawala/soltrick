@@ -8,19 +8,21 @@
 .back img{
     height: 190px;
     width: 530px;
-    -webkit-transition: all 1s ease;
+    /* -webkit-transition: all 1s ease;
      -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
-    transition: all 1s ease;
+    transition: all 1s ease; */
     border-style:solid;
     border-color: #e6e6e6;
     border-width: 1px;
 }
  
 .back img:hover {
-  width: 180px;
-  height: 140px;
+  width: 380px;
+  
+  transform: scaleX(-1);
+  transition: 1s;
 }
 
 

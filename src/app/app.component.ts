@@ -3,6 +3,7 @@ import {AuthService} from "../services/auth.service";
 import {Router} from "@angular/router";
 import {User} from "./shared";
 import { LoginComponent } from './login/login.component';
+import * as $ from 'jquery';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -28,5 +29,7 @@ constructor(private authService: AuthService, private router: Router) {
   signOut() {
     this.authService.logout();
     this.router.navigate(['/']);
-  }
+   }
+  
+
 }

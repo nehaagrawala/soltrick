@@ -11,8 +11,8 @@
       <img src="../assets/logosol.gif" class="logoImage1">
     </a>
   </div>
-  <div class=" navbar-collapse collapse" id="myNavbar">
-  <ul class="nav navbar-nav menu ">
+  <div class=" navbar-collapse collapse"  id="myNavbar">
+  <ul class="nav navbar-nav menu" data-toggle="collapse" data-target="#myNavbar.in">
     <li>
       <a [routerLink]="['/home']" routerLinkActive="active">Home </a>
      </li> 
@@ -36,7 +36,7 @@
      </li> 
     
     </ul>
-    <ul class="nav navbar-nav">
+    <ul class="nav navbar-nav"data-toggle="collapse" data-target="#myNavbar.in">
       <li>
         <div id=link_logo>
           <a href="http://www.facebook.com/soltrick" target="_blank" t="sitenav/facebook"  rel="nofollow">
@@ -56,23 +56,25 @@
         </div>&nbsp
       </li>
     </ul>
-    <ul class="nav navbar-nav navbar-right">
+    <ul class="nav navbar-nav navbar-right"data-toggle="collapse" data-target="#myNavbar.in">
       
       <li class="login" *ngIf="!isUserAuth()">
         <a [routerLink]="['/login']" routerLinkActive="login"><i class="glyphicon glyphicon-user"></i>Login</a>
       </li>
       
     </ul>
+    
     <ul class="nav nav-pills navbar-right signout">
-                    
-                    <li *ngIf="isUserAuth()" class="dropdown">
-                        <div class="dropdown-toggle username" data-toggle="dropdown">{{currentUsername}}<b class="caret"></b></div>
-                        <ul class="dropdown-menu dropdown-menu-right">
-                            <li><a class="signoutmenu" (click)="signOut()">Sign out</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                   
+      <li *ngIf="isUserAuth()" class="dropdown" >
+        <div class="dropdown-toggle username" data-toggle="dropdown">{{currentUsername}} <b class="caret"></b></div>
+        <ul class="dropdown-menu dropdown-menu-right"data-toggle="collapse" data-target="#myNavbar.in">
+          <li><a class="signoutmenu"  (click)="signOut()">Sign out</a></li>
+        </ul>
+          </li>
+        </ul>
   </div>
+              
 </nav>
 
 <router-outlet></router-outlet>
